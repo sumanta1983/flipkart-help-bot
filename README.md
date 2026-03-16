@@ -73,7 +73,7 @@ Full setup instructions: [SETUP.md](SETUP.md)
 ```bash
 curl -X POST http://localhost:8000/ingest \
   -H "Content-Type: application/json" \
-  -d '{"source_type": "pdf", "source": "/path/to/doc.pdf", "collection": "my-docs"}'
+  -d '{"source_type": "pdf", "source": "/path/to/doc.pdf", "collection": "flipkart-faq"}'
 ```
 
 ### Ingest a URL
@@ -82,12 +82,12 @@ curl -X POST http://localhost:8000/ingest \
 # Static site
 curl -X POST http://localhost:8000/ingest \
   -H "Content-Type: application/json" \
-  -d '{"source_type": "url", "source": "https://example.com", "collection": "my-docs"}'
+  -d '{"source_type": "url", "source": "https://example.com", "collection": "flipkart-faq"}'
 
 # JavaScript-rendered site (requires playwright install chromium)
 curl -X POST http://localhost:8000/ingest \
   -H "Content-Type: application/json" \
-  -d '{"source_type": "url", "source": "https://www.flipkart.com/helpcentre", "collection": "my-docs", "js": true}'
+  -d '{"source_type": "url", "source": "https://www.flipkart.com/helpcentre", "collection": "flipkart-faq", "js": true}'
 ```
 
 ### Ask a question
@@ -95,7 +95,7 @@ curl -X POST http://localhost:8000/ingest \
 ```bash
 curl -X POST http://localhost:8000/query \
   -H "Content-Type: application/json" \
-  -d '{"question": "What is the return policy?", "collection": "my-docs"}'
+  -d '{"question": "What is the return policy?", "collection": "flipkart-faq"}'
 ```
 
 ```json

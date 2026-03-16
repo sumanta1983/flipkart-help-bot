@@ -90,7 +90,7 @@ Load documents into a pgvector collection.
 {
   "source_type": "pdf",
   "source": "/path/to/report.pdf",
-  "collection": "my-docs",
+  "collection": "flipkart-faq",
   "metadata": { "project": "finance" }
 }
 ```
@@ -114,7 +114,7 @@ Load documents into a pgvector collection.
 
 Response:
 ```json
-{ "collection": "my-docs", "chunks_stored": 42 }
+{ "collection": "flipkart-faq", "chunks_stored": 42 }
 ```
 
 ### `POST /query`
@@ -123,7 +123,7 @@ Ask a question — returns LLM answer + source references.
 ```json
 {
   "question": "What are the key risks in Q3?",
-  "collection": "my-docs",
+  "collection": "flipkart-faq",
   "k": 5,
   "filter": { "project": "finance" }
 }
@@ -145,7 +145,7 @@ Raw similarity search — returns chunks without LLM generation. Useful for debu
 ```json
 {
   "query": "Q3 risks",
-  "collection": "my-docs",
+  "collection": "flipkart-faq",
   "k": 3
 }
 ```

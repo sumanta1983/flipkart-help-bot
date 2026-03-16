@@ -185,7 +185,7 @@ curl -X POST http://localhost:8000/ingest \
   -d '{
     "source_type": "pdf",
     "source": "/absolute/path/to/document.pdf",
-    "collection": "my-docs"
+    "collection": "flipkart-faq"
   }'
 ```
 
@@ -197,7 +197,7 @@ curl -X POST http://localhost:8000/ingest \
   -d '{
     "source_type": "url",
     "source": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
-    "collection": "my-docs"
+    "collection": "flipkart-faq"
   }'
 ```
 
@@ -211,7 +211,7 @@ curl -X POST http://localhost:8000/ingest \
   -d '{
     "source_type": "url",
     "source": "https://www.flipkart.com/helpcentre",
-    "collection": "my-docs",
+    "collection": "flipkart-faq",
     "js": true
   }'
 ```
@@ -226,7 +226,7 @@ curl -X POST http://localhost:8000/ingest \
   -d '{
     "source_type": "text",
     "source": "/absolute/path/to/notes.md",
-    "collection": "my-docs"
+    "collection": "flipkart-faq"
   }'
 ```
 
@@ -247,7 +247,7 @@ curl -X POST http://localhost:8000/ingest \
 Response for all ingest calls:
 
 ```json
-{ "collection": "my-docs", "chunks_stored": 42 }
+{ "collection": "flipkart-faq", "chunks_stored": 42 }
 ```
 
 ### Scraping structured sites (e.g. Flipkart Help Centre)
@@ -286,7 +286,7 @@ curl -X POST http://localhost:8000/query \
   -H "Content-Type: application/json" \
   -d '{
     "question": "What is the main topic of the document?",
-    "collection": "my-docs"
+    "collection": "flipkart-faq"
   }'
 ```
 
