@@ -1,4 +1,4 @@
-# RAG System
+# RAG System (Flipkart CustomerCare Bot)
 
 A generic, multi-source **Retrieval-Augmented Generation (RAG)** system built with Python, FastAPI, LangChain, pgvector, and OpenAI. Ingest documents from PDFs, websites, plain text/Markdown, or SQL databases — then ask questions and get grounded answers with source citations.
 
