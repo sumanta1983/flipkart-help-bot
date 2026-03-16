@@ -1,0 +1,33 @@
+# Core
+fastapi==0.135.1
+uvicorn[standard]==0.42.0
+pydantic==2.12.5
+pydantic-settings==2.13.1
+
+# LangChain
+langchain==1.2.12
+langchain-core==1.2.19
+langchain-community==0.4.1
+langchain-openai==1.1.11
+langchain-postgres==0.0.17
+langchain-text-splitters==1.1.1
+
+# OpenAI
+openai==2.28.0
+tiktoken==0.12.0
+
+# Loaders
+pypdf==6.9.0               # PDF
+beautifulsoup4==4.14.3     # Web scraping (static)
+requests==2.32.5           # Web scraping (static)
+playwright==1.58.0         # Web scraping (JS-rendered sites) — run: playwright install chromium
+
+# Database
+psycopg2-binary==2.9.11
+sqlalchemy>=2.0.0
+pgvector==0.3.6
+
+# Utilities
+aiohttp==3.13.3
+httpx==0.28.1
+numpy==2.4.3
